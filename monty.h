@@ -67,7 +67,10 @@ void more_usage_error_mgt(int error_code, unsigned int line);
 void pall(stack_t **stack, unsigned int line_number);
 void push(stack_t **stack, unsigned int param);
 void push_queue(stack_t **stack, unsigned int param);
-
+void verify_args_num(int argn)
+void verify_access_rights(const char *filename)
+int verify_push_param(const char *param)
+int verify_digits(const char *s)
 
 
 #endif
