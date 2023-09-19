@@ -65,6 +65,8 @@ void common_error_mgt(int error_code, char *opcode, unsigned int line);
 void usage_error_mgt(int error_code, unsigned int line);
 void more_usage_error_mgt(int error_code, unsigned int line);
 void pall(stack_t **stack, unsigned int line_number);
+void push(stack_t **stack, unsigned int param);
+void push_queue(stack_t **stack, unsigned int param);
 
 
 
