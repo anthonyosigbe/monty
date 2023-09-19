@@ -1,0 +1,27 @@
+# Buildscript intended for Monty.
+
+PROGRAM = monty.run
+SRC_DIR = src
+INC_DIR = include
+
+CC = gcc
+CFLAGS = -Wall -Wextra -Werror -pedantic -Wstrict-prototypes -Wmissing-prototypes -g
+CPPFLAGS = -I$(INC_DIR)
+LDFLAGS =
+LDLIBS =
+
+SRCS = $(wildcard $(SRC_DIR)/*.c)
+OBJS = $(SRCS:.c=.o)
+
+.PHONY: all clean
+
+all: $(PROGRAM)
+
+$(PROGRAM): $(OBJS)
+	$(CC) $(CFLAGS) $(LDFLAGS) $(LDLIBS) -o $@ $^
+
+$(SRC_DIR)/%.o: $(SRC_DIR)/%.c
+	$(CC) $(CFLAGS) $(CPPFLAGS) -c -o $@ $<
+
+clean:
+	rm -f $(OBJS) $(PROGRAM)
