@@ -71,6 +71,7 @@ void verify_args_num(int argn)
 void verify_access_rights(const char *filename)
 int verify_push_param(const char *param)
 int verify_digits(const char *s)
+void stack_deallocation(void)
 
 
 #endif
