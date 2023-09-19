@@ -60,6 +60,12 @@ typedef struct instruction_s
 
 extern stack_t *head;
 
+void error_mgt(int error_code, char *opcode, unsigned int line, char *buff);
+void common_error_mgt(int error_code, char *opcode, unsigned int line);
+void usage_error_mgt(int error_code, unsigned int line);
+void more_usage_error_mgt(int error_code, unsigned int line);
+void pall(stack_t **stack, unsigned int line_number);
+
 
 
 #endif
