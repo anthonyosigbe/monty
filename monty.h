@@ -72,6 +72,8 @@ void verify_access_rights(const char *filename)
 int verify_push_param(const char *param)
 int verify_digits(const char *s)
 void stack_deallocation(void)
+void pint(stack_t **stack, unsigned int line_number)
+void pint(stack_t **stack, unsigned int line_number)
 
 
 #endif
