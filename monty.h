@@ -73,9 +73,9 @@ int verify_push_param(const char *param);
 int verify_digits(const char *s);
 void stack_deallocation(void);
 void pint(stack_t **stack, unsigned int line_number);
-void pint(stack_t **stack, unsigned int line_number);
 void (*func_src(char *s))(stack_t **, unsigned int);
-int execution_mgt(char *op_code, char *op_param, unsigned int line, int m);'
+int execution_mgt(char *op_code, char *op_param, unsigned int line, int m);
+void pop(stack_t **stack, unsigned int line_number);
 
 
 #endif
