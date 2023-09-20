@@ -77,6 +77,9 @@ void (*func_src(char *s))(stack_t **, unsigned int);
 int execution_mgt(char *op_code, char *op_param, unsigned int line, int m);
 void pop(stack_t **stack, unsigned int line_number);
 void swap(stack_t **stack, unsigned int line_number);
+void add(stack_t **stack, unsigned int line_number);
+void mod(stack_t **stack, unsigned int line_number);
+void rotr(stack_t **stack, unsigned int line_number);
 
 
 #endif
