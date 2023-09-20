@@ -80,6 +80,7 @@ void swap(stack_t **stack, unsigned int line_number);
 void add(stack_t **stack, unsigned int line_number);
 void mod(stack_t **stack, unsigned int line_number);
 void rotr(stack_t **stack, unsigned int line_number);
+unsigned int stack_tracking(const stack_t *stack);
 
 
 #endif
