@@ -26,6 +26,11 @@
 #define ERR_MOD_USG	210
 #define ERR_PCH_USG	211
 #define ERR_PCH_EMP	212
+#define SUCSS_OP	0
+#define VALID_PARM	0
+#define MIN_ARGS	2
+#define METH_STACK	300
+#define METH_QUEUE	301
 
 
 /**
