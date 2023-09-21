@@ -10,16 +10,15 @@
 
 void add(stack_t **stack, unsigned int line_number)
 {
-	unsigned int length = count_stack(*stack);
+	stack_t *temp = *stack;
+	unsigned int a = 0, b = 0, length = 0;
 
+	length = stack_tracking(*stack);
 	if (length < 2)
 		error_mgt(ERR_ADD_USG, NULL, line_number, NULL);
-
-	stack_t *temp = *stack;
-	int a = temp->n;
-	int b = temp->next->n;
-
-	temp->next->n = a + b;
+	a = temp->n;
+	b = temp->next->n;
+	temp->next->n = b + a;
 	*stack = temp->next;
 	free(temp);
 }
