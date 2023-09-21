@@ -5,7 +5,7 @@
  * followed by a newline.
  * @stack: The stack's head
  * @line_number: The line number where the error occurred
- *
+ * using if statement
  * Return: No return value
  */
 
