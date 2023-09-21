@@ -4,7 +4,7 @@
  * rotr - Rotates the stack to bring the bottom element to the top
  * @stack: Pointer to the head of the stack
  * @line_number: The line number where an error could occur
- *
+ * using if and while loop
  * Return: No return value
  */
 
