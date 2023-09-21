@@ -5,7 +5,7 @@
  * followed by a newline
  * @stack: The stack's head
  * @line_number: The line number where an error might occur
- *
+ * using while loop
  * Return: No return value
  */
 
