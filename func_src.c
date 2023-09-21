@@ -29,7 +29,10 @@ void (*func_src(char *s))(stack_t **, unsigned int)
 		{ "rotr", rotr },
 		{ NULL, NULL }
 	};
-	for (int i = 0; insts[i].opcode; i++)
+
+	int i;
+
+	for (i = 0; insts[i].opcode; i++)
 	{
 		if (strcmp(s, insts[i].opcode) == 0)
 			return (insts[i].f);
