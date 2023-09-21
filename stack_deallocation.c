@@ -2,7 +2,7 @@
 
 /**
  * stack_deallocation - Deallocates all elements in the stack
- *
+ * using if and while
  * Return: Nothing
  */
 void stack_deallocation(void)
