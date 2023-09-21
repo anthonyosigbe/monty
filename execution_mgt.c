@@ -25,7 +25,7 @@ int execution_mgt(char *op_code, char *op_param, unsigned int line, int m)
 	{
 		if (strcmp(op_code, "push") == 0)
 		{
-			status_op = check_push_param(op_param);
+			status_op = verify_push_param(op_param);
 			if (status_op == ERR_PUSH_USG)
 				return (ERR_PUSH_USG);
 
