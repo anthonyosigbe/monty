@@ -6,7 +6,7 @@
  * @opcode: The operation code to manage
  * @line: The line on which the error occurred
  * @buff: The reserved error line buffer
- *
+ * using if and else statement
  * Return: Nothing
  */
 void error_mgt(int error_code, char *opcode, unsigned int line, char *buff)
