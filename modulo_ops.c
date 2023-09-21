@@ -11,14 +11,16 @@
 
 void mod(stack_t **stack, unsigned int line_number)
 {
-	unsigned int length = count_stack(*stack);
+	unsigned int length = stack_tracking(*stack);
+	stack_t *temp = *stack;
+	int a = temp->n;
+	int b = temp->next->n;
 
 	if (length < 2)
 		error_mgt(ERR_MOD_USG, NULL, line_number, NULL);
 
-	stack_t *temp = *stack;
-	int a = temp->n;
-	int b = temp->next->n;
+	a = temp->n;
+	b = temp->next->n;
 
 	if (a == 0)
 		error_mgt(ERR_DIV_ZRO, NULL, line_number, NULL);

@@ -4,20 +4,20 @@
  * stack_deallocation - Deallocates all elements in the stack
  *
  * Return: Nothing
- */stack_
+ */
 void stack_deallocation(void)
 {
-	stack_t *current = head;
+	stack_t *temp = NULL;
 
-	while (current != NULL)
+	if (head)
 	{
-		stack_t *temp = current;
+		temp = head;
 
-		current = current->next;
-
-		free(temp);
+		while (temp)
+		{
+			head = head->next;
+			free(temp);
+			temp = head;
+		}
 	}
-
-	head = NULL;
 }
-

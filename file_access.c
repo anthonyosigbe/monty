@@ -11,7 +11,7 @@ FILE *open_monty_file(char *filename)
 {
 	FILE *fd = NULL;
 
-	check_access_rights(filename);
+	verify_access_rights(filename);
 
 	fd = fopen(filename, "r");
 

@@ -7,7 +7,7 @@
 void verify_args_num(int argn)
 {
 	if (argn != MIN_ARGS)
-		handle_error(ERR_ARG_USG, NULL, 0, NULL);
+		error_mgt(ERR_ARG_USG, NULL, 0, NULL);
 }
 
 /**

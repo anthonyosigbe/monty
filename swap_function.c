@@ -10,7 +10,7 @@
 
 void swap(stack_t **stack, unsigned int line_number)
 {
-	unsigned int length = count_stack(*stack);
+	unsigned int length = stack_tracking(*stack);
 
 	if (length < 2)
 		error_mgt(ERR_SWAP_USG, NULL, line_number, NULL);
