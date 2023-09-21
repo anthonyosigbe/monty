@@ -10,17 +10,16 @@
 
 void mul(stack_t **stack, unsigned int line_number)
 {
-	unsigned int length = stack_tracking(*stack);
 	stack_t *temp = *stack;
-	int a = temp->n;
-	int b = temp->next->n;
+	unsigned int a = 0, b = 0, len = 0;
 
-	if (length < 2)
+	len = stack_tracking(*stack);
+
+	if (len < 2)
 		error_mgt(ERR_MUL_USG, NULL, line_number, NULL);
 
 	a = temp->n;
 	b = temp->next->n;
-
 	temp->next->n = b * a;
 	*stack = temp->next;
 	free(temp);
