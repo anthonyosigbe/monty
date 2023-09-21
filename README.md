@@ -19,7 +19,7 @@ What are the common implementations of stacks and queues
 What are the most common use cases of stacks and queues
 What is the proper way to use global variables
 
-Tasks Carried Out
+Tasks CarriedOut
 0. push, pall (Implement the push and pall opcodes.)
 
 1. pint (Implement the pint opcode)
