@@ -3,7 +3,7 @@
 /**
  * stack_tracking - Tracks the number of elements in the stack
  * @stack: The stack to track
- *
+ * using while loop
  * Return: Number of elements in the stack
  */
 
