@@ -4,7 +4,7 @@
  * add - Combines the values of the top two elements in the stack
  * @stack: The stack's head
  * @line_number: The line number where an error might occur
- *
+ * using if statement
  * Return: No return value
  */
 
