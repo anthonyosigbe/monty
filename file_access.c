@@ -3,7 +3,7 @@
 /**
  * open_monty_file - Opens the specified file for Monty command interpretation
  * @filename: The name of the file to be opened
- *
+ * using if statement
  * Return: A file pointer to the opened file, or NULL on failure
  */
 
